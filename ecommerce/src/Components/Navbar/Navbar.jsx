@@ -40,7 +40,7 @@ export default function Navbar() {
           </li>
 
           <div className="close" onClick={HideMenu}>
-          <AiFillCloseCircle size={30}   />
+          <AiFillCloseCircle size={30}    />
         </div>
         </ul>
 
@@ -60,13 +60,15 @@ export default function Navbar() {
 const Header = styled.div`
   width: 100%;
   height: 5rem;
-  background-color: #f5f3ec;
+  background-color: #fcfcfc;
   padding: 0rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  position: relative;
+  position: fixed;
+  top: 0;
+
 
   
 
@@ -96,11 +98,16 @@ const Header = styled.div`
   .menu,
   .close {
     display: none;
+       cursor: pointer;
+
+       
+    
   }
 
   .cart {
     position: absolute;
     right: 3.5rem;
+    cursor: pointer;
   }
 
   @media (max-width: 650px) {
