@@ -1,0 +1,66 @@
+[
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 1.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+
+    },
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 2.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+
+    },
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 3.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+
+    },
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 4.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+    },
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 5.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+
+    },
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 6.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+
+    },
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 7.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+
+    },
+    {
+        "id" :"0",
+        "img": "../../src/assets/SummerClothes/Shirt 8.png",
+        "brand": "addidas",
+        "name": "cutton T-shirt",
+        "price" : "$20"
+
+    }
+
+]

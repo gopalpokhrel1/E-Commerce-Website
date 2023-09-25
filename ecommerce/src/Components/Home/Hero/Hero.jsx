@@ -61,6 +61,8 @@ background-color: rgb(238, 238, 221);
                 width: 10rem;
                 height: 10rem;
 
+                cursor: pointer;
+
             }
         }
 

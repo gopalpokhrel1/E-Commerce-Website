@@ -1,0 +1,64 @@
+[
+    {
+        "id" : "0",
+        "img" : "../../src/assets/Arrival/img1.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      },
+      {
+        "id" : "1",
+        "img" : "../../src/assets/Arrival/img2.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      }
+      ,
+      {
+        "id" : "2",
+        "img" : "../../src/assets/Arrival/img3.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      }
+      ,
+      {
+        "id" : "3",
+        "img" : "../../src/assets/Arrival/img4.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      }
+      ,
+      {
+        "id" : "4",
+        "img" : "../../src/assets/Arrival/img5.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      }
+      ,
+      {
+        "id" : "5",
+        "img" : "../../src/assets/Arrival/img6.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      }
+      ,
+      {
+        "id" : "6",
+        "img" : "../../src/assets/Arrival/img7.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      }
+      ,
+      {
+        "id" : "7",
+        "img" : "../../src/assets/Arrival/img8.png",
+        "name" : "cutton T-shirt",
+        "price" : "$20",
+        "brand" : "addidas"
+      }
+]

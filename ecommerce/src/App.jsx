@@ -1,7 +1,10 @@
 
 import './App.css'
-import Hero from './Components/Hero/Hero'
+
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
+import Home from './Components/Home/Home'
+
 
 function App() {
   
@@ -9,7 +12,10 @@ function App() {
   return (
     <>
        <Navbar/>
-       <Hero/>
+
+       <Home/>
+      
+       <Footer/>
     </>
   )
 }

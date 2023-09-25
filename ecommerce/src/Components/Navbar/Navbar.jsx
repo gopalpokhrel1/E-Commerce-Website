@@ -69,7 +69,7 @@ const Header = styled.div`
   position: fixed;
   top: 0;
 
-
+  z-index: 10;
   
 
   .photo img {
