@@ -3,6 +3,7 @@
     "id" : "0",
     "img" : "../../src/assets/Features/free-shipping.png",
     "name" : "Free shipping"
+
   },
   {
     "id" : "1",
@@ -27,11 +28,6 @@
     "img" : "../../src/assets/Features/happy-sell.png",
     "name" : "Happy sell"
   }
-  ,
-  {
-    "id" : "5",
-    "img" : "../../src/assets/Features/support.png",
-    "name" : "F 24/7 Support"
-  }
+ 
 
 ]

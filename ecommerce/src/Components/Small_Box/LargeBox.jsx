@@ -1,39 +1,59 @@
 import styled from 'styled-components'
 import {CiStar} from 'react-icons/ci'
 import {BiCartAdd} from 'react-icons/bi'
+import ItemsDetails from '../Shop/ItemsDetails/ItemsDetails'
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
-export default function LargeBox({img, brand, name, price}) {
+export default function LargeBox({img, brand, name, price, url}) {
+
+const [condition, setCondition] = useState(false);
+
+
   return (
-    <Box>
-        <div className="photo">
-            <img src={img} alt="Photo" />
-        </div>
-        <div className="mid-body">
-            <p>{brand}</p>
-            <h3>{name}</h3>
-            <div className="rating">
-              <CiStar size={20}/>
-              <CiStar size={20}/>
-              <CiStar size={20}/>
-              <CiStar size={20}/>
-              <CiStar size={20}/>
+    <>
+       
+         
+        <NavLink  to='/itemsDetails'  >
+        <Box>
+            <div className="photo">
+                <img src={img} alt="Photo" />
             </div>
-
-            <div className="last">
-                <p>{price}</p>
-                <div className="cart">
-                <BiCartAdd size={20}/>
+            <div className="mid-body">
+                <p>{brand}</p>
+                <h3>{name}</h3>
+                <div className="rating">
+                  <CiStar size={20}/>
+                  <CiStar size={20}/>
+                  <CiStar size={20}/>
+                  <CiStar size={20}/>
+                  <CiStar size={20}/>
                 </div>
-
+    
+                <div className="last">
+                    <p>{price}</p>
+                    <div className="cart">
+                    <BiCartAdd size={20}/>
+                    
+                    </div>
+    
+                </div>
             </div>
-        </div>
-      
-    </Box>
+
+          
+        </Box>
+       
+
+        </NavLink>
+
+</>
   )
 }
 
 
 const Box = styled.div`
+
+cursor: pointer;
 
 width: 15rem;
 height: 19rem;

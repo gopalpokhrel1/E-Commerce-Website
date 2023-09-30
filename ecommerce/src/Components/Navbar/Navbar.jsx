@@ -5,6 +5,8 @@ import { VscEyeClosed } from "react-icons/vsc";
 import {AiFillCloseCircle} from 'react-icons/ai';
 import { useState } from "react";
 
+import { NavLink, Link } from "react-router-dom";
+
 export default function Navbar() {
   const [displayMenu, setDisplayMenu] = useState(false);
 
@@ -24,10 +26,10 @@ export default function Navbar() {
       <div className="list">
         <ul className={`list-item ${displayMenu ? "show-menu" : ""}`}>
           <li>
-            <a href="">Home</a>
+            <NavLink to='/'  className='anchorTag'>Home</NavLink>
           </li>
           <li>
-            <a href="">Shop</a>
+            <NavLink to='/Shop'  className='anchorTag'>Shop</NavLink>
           </li>
           <li>
             <a href="">Blog</a>
@@ -60,10 +62,11 @@ export default function Navbar() {
 const Header = styled.div`
   width: 100%;
   height: 5rem;
-  background-color: #fcfcfc;
+  background-color: #faf7e9;
   padding: 0rem 2rem;
   display: flex;
   justify-content: space-between;
+  box-shadow: 5px 5px 7px #686867;
   align-items: center;
 
   position: fixed;
