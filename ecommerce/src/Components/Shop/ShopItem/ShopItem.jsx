@@ -2,14 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 import LargeBox from '../../Small_Box/LargeBox';
-import ItemsDetails from '../ItemsDetails/ItemsDetails';
+
+
 
 export default function Shop() {
   const [activeSlide, setActiveSlide] = useState(0);
   const itemCount = 30;
   const itemsPerSlide = 16;
   const slidesCount = Math.ceil(itemCount / itemsPerSlide);
-  const slideWidth = 100 / slidesCount; // Calculate the width of each slide
+  const slideWidth = 100 / slidesCount; 
 
   const handlePrev = () => {
     setActiveSlide((activeSlide - 1 + slidesCount) % slidesCount);
@@ -37,6 +38,10 @@ export default function Shop() {
 
 
 
+  
+
+
+
 
   return (
     <Container>
@@ -44,7 +49,9 @@ export default function Shop() {
         <div className="slider" style={{ transform: `translateX(-${activeSlide * slideWidth}%)` }}>
         {data.slice(activeSlide * itemsPerSlide, (activeSlide + 1) * itemsPerSlide).map((item, index) => (
             <div key={index} className="item">
-              <LargeBox img={item.img} brand={item.brand} name={item.name} price={item.price} url={item.obj}  />
+              
+              <LargeBox img={item.img} brand={item.brand} name={item.name} price={item.price} obj= {item.obj}/>
+              
             </div>
           ))}
           </div>

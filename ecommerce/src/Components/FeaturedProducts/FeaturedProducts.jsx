@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-import LargeBox from "../Small_Box/LargeBox";
+
+import HomePageBox from '../Small_Box/HomePageBox'
 
 export default function FeaturedProducts() {
   const [data, setData] = useState([]);
@@ -24,7 +25,7 @@ export default function FeaturedProducts() {
         {data.map((element) => {
           return (
             <div className="item" key={element.id}>
-              <LargeBox
+              <HomePageBox
                 img={element.img}
                 brand={element.brand}
                 name={element.name}

@@ -1,167 +1,193 @@
-import React from 'react'
-import styled from 'styled-components'
-import LargeBox from '../../Small_Box/LargeBox';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import HomePageBox from "../../Small_Box/HomePageBox"
+
+import { useSelector } from "react-redux";
 
 export default function ItemsDetails() {
+  const item = useSelector((state) => state.item);
+
+  const arr = [item[0].img1, item[0].img2, item[0].img3, item[0].img4];
+
+  const [i, setI] = useState(2);
+  const [image, setImage] = useState(arr[i]);
+
+  useEffect(() => {
+    setImage(arr[i]);
+  }, [i]);
+
   return (
     <Container>
-
-        
-
-        <div className="top">
+      {item.map((value) => (
+        <>
+          <div className="top">
             <div className="photo">
-                <div className="main-photo">
-                    <img src='' alt="photo" />
-                </div>
-                <div className="option">
-                    <button><img src="" alt="photo" /></button>
-                    <button><img src="" alt="photo" /></button>
-                    <button><img src="" alt="photo" /></button>
-                    <button><img src="" alt="photo" /></button>
-                </div>
+              <div className="main-photo">
+                <img src={image} alt="photo" />
+              </div>
+              <div className="option">
+                <button onClick={() => setI(0)}>
+                  <img src={value.img1} alt="photo" />
+                </button>
+                <button onClick={() => setI(1)}>
+                  <img src={value.img2} alt="photo" />
+                </button>
+                <button onClick={() => setI(2)}>
+                  <img src={value.img3} alt="photo" />
+                </button>
+                <button onClick={() => setI(3)}>
+                  <img src={value.img4} alt="photo" />
+                </button>
+              </div>
             </div>
 
             <div className="details">
-                <h1>Title</h1>
-                <h2>Price</h2>
-                <select name="" id="">
-                    <option value="" disabled selected>Select Option</option>
-                    <option value="">First</option>
-                    <option value="">Second</option>
-                    <option value="">Third</option>
-                </select>
+              <h1>{value.title}</h1>
+              <h2>{value.price}</h2>
+              <select name="" id="">
+                <option value="" disabled selected>
+                  Select Option
+                </option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+              </select>
 
-                <div className="cart">
-                    <input type="number" placeholder='NO.'/>
-                    <button>Add Cart</button>
-                </div>
+              <div className="cart">
+                <input type="number" placeholder="NO." />
+                <button>Add Cart</button>
+              </div>
 
-                <h1>Products Details</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nobis, repudiandae alias dolores at non expedita odio fugiat incidunt ab exercitationem cumque doloremque delectus sed praesentium dolorem laborum accusantium amet labore, deleniti hic ex possimus, voluptas maiores? Vero, totam ab similique corrupti, voluptas illum aspernatur, magnam quo odio maiores harum!</p>
+              <h1>Products Details</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Distinctio nobis, repudiandae alias dolores at non expedita odio
+                fugiat incidunt ab exercitationem cumque doloremque delectus sed
+                praesentium dolorem laborum accusantium amet labore, deleniti
+                hic ex possimus, voluptas maiores? Vero, totam ab similique
+                corrupti, voluptas illum aspernatur, magnam quo odio maiores
+                harum!
+              </p>
             </div>
-        </div>
+          </div>
 
+         
+        </>
+      ))}
 
-
-        <div className="recommended">
-
+<div className="recommended">
             <h1>Recommended Items</h1>
             <div className="box">
-                <LargeBox/>
-                <LargeBox/>
-                <LargeBox/>
-                <LargeBox/>
+              <HomePageBox/>
+              <HomePageBox/>
+              <HomePageBox/>
+              <HomePageBox/>
             </div>
-        </div>
-      
+          </div>
     </Container>
-  )
+  );
 }
 
 const Container = styled.div`
+  margin: 10rem auto 5rem auto;
 
-margin: 10rem auto 5rem auto;
+  width: 80%;
 
-
-
-width: 80%;
-
-.top{
+  .top {
     display: flex;
     gap: 2rem;
 
-    .photo{
+    .photo {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .main-photo {
+        width: 20.5rem;
+        height: 19rem;
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        align-items: center;
+        justify-content: center;
 
-        .main-photo{
-            width: 20.5rem;
-                height: 19rem;
-
-                border: 2px solid red;
-            img{
-                width: 10rem;
-                height: 10rem;
-            }
+        border: 5px solid #b4a979;
+        border-radius: 1rem;
+        img {
+          width: 16rem;
+          height: 16rem;
         }
+      }
 
-        .option{
-            display: flex;
-            gap: 0.2rem;
-
-            button{
-                width: 5rem;
-                height: 5rem;
-
-                img{
-                    width: 5rem;
-                height: 5rem;
-                }
-            }
-        }
-    }
-
-
-
-    .details{
+      .option {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        gap: 0.2rem;
 
-        select{
-            width: 7rem;
-            height: 1.5rem;
+        button {
+          width: 5rem;
+          height: 5rem;
+          border: none;
+          background-color: transparent;
+          border: 1px solid black;
+
+          cursor: pointer;
+
+          img {
+            width: 4.5rem;
+            height: 4.5rem;
+          }
+        }
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      select {
+        width: 7rem;
+        height: 1.5rem;
+      }
+
+      .cart {
+        input {
+          width: 3rem;
+          height: 2rem;
+
+          padding: 0.3rem;
         }
 
-        .cart{
-            
-            input{
-                width: 3rem;
-                height: 2rem;
-
-                padding: 0.3rem;
-            }
-
-            button{
-                width: 5rem;
-                height: 2rem;
-                margin-left: 0.9rem;
-                border: none;
-                background-color: blue;
-                color: white;
-                border-radius: 0.9rem;
-            }
+        button {
+          width: 5rem;
+          height: 2rem;
+          margin-left: 0.9rem;
+          border: none;
+          background-color: blue;
+          color: white;
+          border-radius: 0.9rem;
         }
+      }
     }
 
-
-    @media (max-width:750px){
-       flex-direction: column;
+    @media (max-width: 750px) {
+      flex-direction: column;
     }
+  }
 
-  
-}
+  @media (max-width: 370px) {
+    width: 100%;
+  }
 
-@media (max-width:370px)
-    {
-        width: 100%;
+  .recommended {
+    margin: 5rem 0rem;
+    text-align: center;
+
+    .box {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(9rem, 15rem));
+      grid-gap: 1rem;
+
+      justify-content: center;
     }
-
-
-    .recommended{
-        margin: 5rem 0rem;
-        text-align: center;
-
-        .box{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(9rem, 15rem));
-            grid-gap: 1rem;
-
-            justify-content: center;
-            
-        }
-    }
-
+  }
 `;

@@ -4,24 +4,15 @@ import {BiCartAdd} from 'react-icons/bi'
 import { NavLink } from 'react-router-dom'
 import '../../App.css'
 
-import { useDispatch } from 'react-redux'
-import { AddItems } from '../../Redux/Slice/Slice'
 
 
 
 
 
-export default function LargeBox({img, brand, name, price, obj}) {
+export default function LargeBox({img, brand, name, price}) {
 
-const dispatch = useDispatch();
 
-const handleitems = (item)=>{
 
-    
-    dispatch(
-        AddItems(item)
-    )
-}
 
 
 
@@ -32,8 +23,8 @@ const handleitems = (item)=>{
     <>
        
          
-        <NavLink  to='/itemsDetails' className='navlink'>
-        <Box  onClick={()=> handleitems(obj)}>
+        <NavLink  to='/Shop' className='navlink'>
+        <Box>
             <div className="photo">
                 <img src={img} alt="Photo"  />
             </div>
