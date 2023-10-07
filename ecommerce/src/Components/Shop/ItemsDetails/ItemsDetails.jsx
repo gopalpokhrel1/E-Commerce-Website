@@ -6,8 +6,11 @@ import { useSelector } from "react-redux";
 
 export default function ItemsDetails() {
   const item = useSelector((state) => state.item);
+  
 
   const arr = [item[0].img1, item[0].img2, item[0].img3, item[0].img4];
+
+  
 
   const [i, setI] = useState(2);
   const [image, setImage] = useState(arr[i]);
@@ -15,6 +18,26 @@ export default function ItemsDetails() {
   useEffect(() => {
     setImage(arr[i]);
   }, [i]);
+
+
+
+
+  
+  const [data,setData]= useState([]);
+
+  const fetchdata= ()=>{
+    const item = fetch('../../JSON/Shop.json')
+    .then(value=>value.json())
+    .then(val=> setData(val))
+    .catch(console.log('Error was encounter'));
+  }
+
+  useEffect(()=>{
+    fetchdata();
+  }, [])
+
+
+  
 
   return (
     <Container>
@@ -76,14 +99,20 @@ export default function ItemsDetails() {
       ))}
 
 <div className="recommended">
-            <h1>Recommended Items</h1>
-            <div className="box">
-              <HomePageBox/>
-              <HomePageBox/>
-              <HomePageBox/>
-              <HomePageBox/>
-            </div>
-          </div>
+  <h1>Recommended Items</h1>
+  <div className="box">
+    {data.map((value) => {
+      if (value.type === item[0].type) {
+        return <HomePageBox     img={value.img}
+        brand={value.brand}
+        name={value.name}
+        price={value.price}   />;
+      }
+      return null;
+    })}
+  </div>
+</div>
+
     </Container>
   );
 }

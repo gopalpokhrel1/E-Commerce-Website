@@ -5,6 +5,7 @@
         "brand": "addidas",
         "name": "cutton T-shirt",
         "price" : "$20",
+        "type": "MensTshirt",
         "obj":[
           {
             "img1":"../../src/assets/ShopItem/First_tshirt/img1.jpg",
@@ -12,7 +13,8 @@
             "img3":"../../src/assets/ShopItem/First_tshirt/img3.jpg",
             "img4": "../../src/assets/ShopItem/First_tshirt/img4.png",
             "title": "Mens's T-shirts",
-            "price": "$30"
+            "price": "$30",
+            "type": "MensTshirt"
           }
         ]
 
@@ -22,7 +24,20 @@
         "img": "../../src/assets/SummerClothes/Shirt 2.png",
         "brand": "addidas",
         "name": "cutton T-shirt",
-        "price" : "$20"
+        "price" : "$20",
+        "type": "MensTshirt",
+        "obj":[
+          {
+            "img1":"../../src/assets/ShopItem/Second_item/img1.jpg",
+            "img2":"../../src/assets/ShopItem/Second_item/img2.jpg",
+            "img3":"../../src/assets/ShopItem/Second_item/img3.jpg",
+            "img4": "../../src/assets/ShopItem/Second_item/img4.jpg",
+            "title": "Mens's T-shirts",
+            
+            "price": "$30",
+            "type": "MensTshirt"
+          }
+        ]
 
     },
     {
@@ -30,7 +45,19 @@
         "img": "../../src/assets/SummerClothes/Shirt 3.png",
         "brand": "addidas",
         "name": "cutton T-shirt",
-        "price" : "$20"
+        "price" : "$20",
+        "type": "third_item",
+        "obj":[
+          {
+            "img1":"../../src/assets/ShopItem/Third_item/img1.jpg",
+            "img2":"../../src/assets/ShopItem/Third_item/img2.jpg",
+            "img3":"../../src/assets/ShopItem/Third_item/img3.jpg",
+            "img4": "../../src/assets/ShopItem/Third_item/img4.jpg",
+            "title": "Mens's T-shirts",
+            "price": "$30",
+            "type": "third_item"
+          }
+        ]
 
     },
     {
@@ -38,14 +65,38 @@
         "img": "../../src/assets/SummerClothes/Shirt 4.png",
         "brand": "addidas",
         "name": "cutton T-shirt",
-        "price" : "$20"
+        "price" : "$20",
+        "type": "MensTshirt",
+        "obj":[
+          {
+            "img1":"../../src/assets/ShopItem/Fourth_item/img1.jpg",
+            "img2":"../../src/assets/ShopItem/Fourth_item/img2.jpg",
+            "img3":"../../src/assets/ShopItem/Fourth_item/img3.jpg",
+            "img4": "../../src/assets/ShopItem/Fourth_item/img4.png",
+            "title": "Mens's T-shirts",
+            "price": "$30",
+            "type": "MensTshirt"
+          }
+        ]
     },
     {
         "id" :"4",
         "img": "../../src/assets/SummerClothes/Shirt 5.png",
         "brand": "addidas",
         "name": "cutton T-shirt",
-        "price" : "$20"
+        "price" : "$20",
+        "type": "third_item",
+        "obj":[
+          {
+            "img1":"../../src/assets/ShopItem/Fifth_item/img1.jpg",
+            "img2":"../../src/assets/ShopItem/Fifth_item/img2.jpg",
+            "img3":"../../src/assets/ShopItem/Fifth_item/img3.jpg",
+            "img4": "../../src/assets/ShopItem/Fifth_item/img4.jpg",
+            "title": "Mens's T-shirts",
+            "price": "$30",
+            "type": "third_item"
+          }
+        ]
 
     },
     {
@@ -53,7 +104,19 @@
         "img": "../../src/assets/SummerClothes/Shirt 6.png",
         "brand": "addidas",
         "name": "cutton T-shirt",
-        "price" : "$20"
+        "price" : "$20",
+        "type": "MensTshirt",
+        "obj":[
+          {
+            "img1":"../../src/assets/ShopItem/Sixth_item/img1.jpg",
+            "img2":"../../src/assets/ShopItem/Sixth_item/img2.jpg",
+            "img3":"../../src/assets/ShopItem/Sixth_item/img3.jpg",
+            "img4": "../../src/assets/ShopItem/Sixth_item/img4.jpg",
+            "title": "Mens's T-shirts",
+            "price": "$30",
+            "type": "MensTshirt"
+          }
+        ]
 
     },
     {
@@ -61,7 +124,19 @@
         "img": "../../src/assets/SummerClothes/Shirt 7.png",
         "brand": "addidas",
         "name": "cutton T-shirt",
-        "price" : "$20"
+        "price" : "$20",
+        "type": "third_item",
+        "obj":[
+          {
+            "img1":"../../src/assets/ShopItem/Seventh_item/img1.jpg",
+            "img2":"../../src/assets/ShopItem/Seventh_item/img2.jpg",
+            "img3":"../../src/assets/ShopItem/Seventh_item/img3.jpg",
+            "img4": "../../src/assets/ShopItem/Seventh_item/img4.jpg",
+            "title": "Mens's T-shirts",
+            "price": "$30",
+            "type": "third_item"
+          }
+        ]
 
     },
     {
@@ -69,7 +144,18 @@
         "img": "../../src/assets/SummerClothes/Shirt 8.png",
         "brand": "addidas",
         "name": "cutton T-shirt",
-        "price" : "$20"
+        "price" : "$20",
+        "obj":[
+          {
+            "img1":"../../src/assets/ShopItem/Eighth_item/img1.jpg",
+            "img2":"../../src/assets/ShopItem/Eighth_item/img2.jpg",
+            "img3":"../../src/assets/ShopItem/Eighth_item/img3.jpg",
+            "img4": "../../src/assets/ShopItem/Eighth_item/img4.jpg",
+            "title": "Mens's T-shirts",
+            "price": "$30",
+            "type": "third_item"
+          }
+        ]
 
     },
     {
@@ -77,7 +163,9 @@
         "img" : "../../src/assets/Arrival/img1.png",
         "name" : "cutton T-shirt",
         "price" : "$20",
-        "brand" : "addidas"
+        "brand" : "addidas",
+        "type": "third_item"
+        
       },
       {
         "id" : "9",
@@ -134,14 +222,7 @@
         "price" : "$20",
         "brand" : "addidas"
       }
-      ,
-      {
-        "id" : "16",
-        "img" : "../../src/assets/Arrival/img8.png",
-        "name" : "cutton T-shirt",
-        "price" : "$20",
-        "brand" : "addidas"
-      }
+    
 
 
 ]
