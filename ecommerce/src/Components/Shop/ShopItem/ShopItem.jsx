@@ -7,7 +7,7 @@ import LargeBox from '../../Small_Box/LargeBox';
 
 export default function Shop() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const itemCount = 35;
+  const itemCount = 16;
   const itemsPerSlide = 16;
   const slidesCount = Math.ceil(itemCount / itemsPerSlide);
   const slideWidth = 100 / slidesCount; 
