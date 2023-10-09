@@ -27,6 +27,11 @@
     "id" : "4",
     "img" : "../../src/assets/Features/happy-sell.png",
     "name" : "Happy sell"
+  },
+  {
+    "id":"5",
+    "img":"../../src/assets/Features/support.png",
+    "name":"Support"
   }
  
 

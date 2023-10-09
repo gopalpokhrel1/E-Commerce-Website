@@ -16,6 +16,8 @@ import ItemsDetails from './Components/Shop/ItemsDetails/ItemsDetails.jsx';
 import store from './Redux/Value.js';
 
 import { Provider } from 'react-redux';
+import Blog from './Components/Blog/Blog.jsx';
+import About from './Components/About/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,15 @@ const router = createBrowserRouter([
       {
         path:'itemsDetails',
         element:<ItemsDetails/>
+      },
+      {
+        path:'Blog',
+        element:<Blog/>
+      }
+      ,
+      {
+        path:'About',
+        element:<About/>
       }
     ]
   }

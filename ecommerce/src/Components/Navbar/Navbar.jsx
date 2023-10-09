@@ -32,10 +32,10 @@ export default function Navbar() {
             <NavLink to='/Shop'  className='anchorTag'>Shop</NavLink>
           </li>
           <li>
-            <a href="">Blog</a>
+            <NavLink to='/Blog'>Blog</NavLink>
           </li>
           <li>
-            <a href="">About</a>
+            <NavLink to='/About'>About</NavLink>
           </li>
           <li>
             <a href="">Contact</a>
