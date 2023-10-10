@@ -38,7 +38,7 @@ export default function Navbar() {
             <NavLink to='/About'>About</NavLink>
           </li>
           <li>
-            <a href="">Contact</a>
+            <NavLink to='/Contact'>Contact</NavLink>
           </li>
 
           <div className="close" onClick={HideMenu}>

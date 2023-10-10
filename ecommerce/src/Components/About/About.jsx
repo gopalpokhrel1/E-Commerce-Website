@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Features from "../Features/Features";
 
 
 export default function About() {
@@ -20,6 +21,8 @@ export default function About() {
             </div>
 
         </div>
+
+        <Features/>
       
     </Container>
   )
@@ -49,6 +52,8 @@ box-sizing: border-box;
         font-size: 2.5rem;
         
     }
+
+    
 }
 
 .body{
@@ -69,21 +74,26 @@ box-sizing: border-box;
        width: 30rem;
     }
    }
+
+
 }
 
-@media (max-width:1030px){
-.body{
-    .img{
-        img{
-            width: 50rem;
+
+
+@media (max-width:488px){
+    
+    .body{
+
+        display: block;
+        .img{
+            img{
+                width: calc(100%-5%);
+            }
         }
-    }
+
+   
 }
 }
-
-
-
-
 
 
 

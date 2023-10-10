@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import SmallBox from "../Small_Box/SmallBox";
-import { BsDisplay } from "react-icons/bs";
 import { useState, useEffect } from "react";
 
 
