@@ -19,6 +19,7 @@ import { Provider } from 'react-redux';
 import Blog from './Components/Blog/Blog.jsx';
 import About from './Components/About/About.jsx';
 import Contact from './Components/ContactUs/Contact.jsx';
+import Cart from './Components/Cart/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
       {
         path:'Contact',
         element:<Contact/>
+      }
+      ,
+      {
+        path:'cart',
+        element:<Cart/>
       }
     ]
   }

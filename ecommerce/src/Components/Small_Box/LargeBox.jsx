@@ -49,7 +49,7 @@ const handleitems = (item)=>{
                 </div>
     
                 <div className="last">
-                    <p>{price}</p>
+                    <p>${price}</p>
                     <div className="cart">
                     <BiCartAdd size={20}/>
                     

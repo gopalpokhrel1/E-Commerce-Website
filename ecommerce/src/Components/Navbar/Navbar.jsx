@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import { BsFillCartPlusFill } from "react-icons/bs";
 import { IoMdMenu } from "react-icons/io";
-import { VscEyeClosed } from "react-icons/vsc";
+
 import {AiFillCloseCircle} from 'react-icons/ai';
 import { useState } from "react";
 
 import { NavLink, Link } from "react-router-dom";
 
+import { useSelector } from "react-redux";
+
 export default function Navbar() {
+ 
+  const value = useSelector((state)=> state.cart.val);
+
   const [displayMenu, setDisplayMenu] = useState(false);
 
   const ShowMenu = () => {
@@ -42,14 +47,16 @@ export default function Navbar() {
           </li>
 
           <div className="close" onClick={HideMenu}>
-          <AiFillCloseCircle size={30}    />
+          <AiFillCloseCircle size={30}    /> 
+          
         </div>
         </ul>
 
       </div>
 
       <div className="cart">
-        <BsFillCartPlusFill size={30} />
+        <NavLink to='/cart' className='cartitem'  ><BsFillCartPlusFill size={30} color="black"/>{value.length}</NavLink>
+        
       </div>
 
       <div className="menu" onClick={ShowMenu}>
@@ -72,7 +79,7 @@ const Header = styled.div`
   position: fixed;
   top: 0;
 
-  z-index: 10;
+  z-index: 100;
   
 
   .photo img {
@@ -111,6 +118,12 @@ const Header = styled.div`
     position: absolute;
     right: 3.5rem;
     cursor: pointer;
+    .cartitem{
+      text-decoration: none;
+      color:black;
+      display: flex;
+      align-items: flex-start;
+    }
   }
 
   @media (max-width: 650px) {

@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import HomePageBox from "../../Small_Box/HomePageBox"
 
-import { useSelector } from "react-redux";
+import { insert } from "../../../Redux/Slice/Cart";
+
+
+
+import { useDispatch, useSelector } from "react-redux";
 
 export default function ItemsDetails() {
-  const item = useSelector((state) => state.item);
+  const item = useSelector((state) => state.user.item);
   
 
   const arr = [item[0].img1, item[0].img2, item[0].img3, item[0].img4];
@@ -36,6 +40,37 @@ export default function ItemsDetails() {
     fetchdata();
   }, [])
 
+  
+
+  const [select , setSelect] = useState();
+
+  const [input, setInput] = useState();
+
+  const [title, setTitle] =useState(item[0].title);
+
+  const [price, setPrice] = useState(item[0].price);
+  
+
+  const dispatch = useDispatch();
+
+  const cartvalue = {
+    img:image,
+    name:title,
+    price:price,
+    quantity:input,
+    size:select
+
+
+  }
+
+  const handledata = (val)=>{
+
+    
+    dispatch(
+      insert(val )
+    )
+  }
+
 
   
 
@@ -65,20 +100,20 @@ export default function ItemsDetails() {
             </div>
 
             <div className="details">
-              <h1>{value.title}</h1>
-              <h2>{value.price}</h2>
-              <select name="" id="">
+              <h1 onLoad={(e)=>setTitle(e.target.value)}>{value.title}</h1>
+              <h2 onLoad={(e)=>setPrice(e.target.value)}>{value.price}</h2>
+              <select name="" id="" onChange={(e) => setSelect(e.target.value)}>
                 <option value="" disabled selected>
                   Select Option
                 </option>
-                <option value="">L</option>
-                <option value="">XL</option>
-                <option value="">XXL</option>
+                <option value="L" >L</option>
+                <option value="XL" >XL</option>
+                <option value="XXL" >XXL</option>
               </select>
 
               <div className="cart">
-                <input type="number" placeholder="NO." />
-                <button>Add Cart</button>
+                <input type="number" placeholder="NO." onChange={(e)=> setInput(e.target.value)} />
+                <button onClick={()=>handledata(cartvalue)}>Add Cart</button>
               </div>
 
               <h1>Products Details</h1>
@@ -193,6 +228,8 @@ const Container = styled.div`
           background-color: blue;
           color: white;
           border-radius: 0.9rem;
+
+          cursor: pointer;
         }
       }
     }
