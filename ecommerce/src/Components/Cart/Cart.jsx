@@ -1,12 +1,16 @@
 import styled from "styled-components"
 import { useDispatch, useSelector } from "react-redux";
-import React, {useState, useEffect } from "react";
+import React, {useState} from "react";
 
-import {remove} from '../../Redux/Slice/Cart'
+import {remove, clearcart} from '../../Redux/Slice/Cart'
 
 export default function Cart() {
 
   const value = useSelector((state)=> state.cart.val);
+
+  const [cart, setCart] = useState(value);
+
+  const [length, setLength]= useState(value.length);
 
   const dispatch = useDispatch();
 
@@ -14,8 +18,22 @@ export default function Cart() {
 
   const total = value.reduce((acc, data) => acc + Number.parseInt(data.price), 0);
 
-  console.log(total);
 
+  const [totalprice, setTotalPrice] = useState(total);
+
+
+    const handlecart= ()=>{
+
+      setCart([]);
+      setTotalPrice(0)
+      
+      dispatch(
+        clearcart()
+      )
+     
+
+                 alert("Your Order was placed");
+    }
 
 
   const handledispatch =(val)=>{
@@ -45,7 +63,7 @@ export default function Cart() {
             </thead>
             <tbody>
              {
-              value.map((data)=>(
+              cart.map((data)=>(
                 <>
                 <tr>
                  
@@ -75,17 +93,27 @@ export default function Cart() {
         <h3>Apply Coupon: <span><input type="text" /></span></h3>
       </div>
 
+             
+      <div className="buy">
+        <button onClick={()=> handlecart()}>Buy Now</button>
+      </div>
+
       <div className="calculate">
         <div className="left">
-          <h1>Total Price: <span>{total}</span></h1>
+          <h1>Total Price: <span>{totalprice}</span></h1>
         
           <h1>Shipping: <span>0</span></h1>
           
-          <h1>Total Cost: <span>{total}</span></h1>
+          <h1>Total Cost: <span>{totalprice}</span></h1>
         </div>
 
+        
+    
        
       </div>
+
+
+
       
     </Container>
   )
@@ -171,6 +199,8 @@ margin-top: 10rem;
 
   float: right;
 
+  margin-top: 1rem;
+
   margin-bottom: 4rem;
 
   margin-right: 2rem;
@@ -187,7 +217,21 @@ margin-top: 10rem;
 
 
   }
+
+
 }
+
+.buy{
+  margin: 1rem 6rem;
+  button{
+    padding: 0.2rem 0.5rem;
+    border: none;
+    background-color: #8989e0;
+  
+  }
+}
+
+
 
 
 `;

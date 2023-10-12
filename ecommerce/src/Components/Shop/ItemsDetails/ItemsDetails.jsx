@@ -42,9 +42,9 @@ export default function ItemsDetails() {
 
   
 
-  const [select , setSelect] = useState();
+  const [select , setSelect] = useState(null);
 
-  const [input, setInput] = useState();
+  const [input, setInput] = useState(null);
 
   const [title, setTitle] =useState(item[0].title);
 
@@ -65,10 +65,22 @@ export default function ItemsDetails() {
 
   const handledata = (val)=>{
 
-    
+    console.log(val.quantity);
+
+    if(val.size === null){
+      alert('Select your size');
+    }
+
+    else if(val.quantity === null){
+      alert('Select your quantity');
+    }
+
+   else{
+     
     dispatch(
       insert(val )
     )
+   }
   }
 
 
@@ -101,7 +113,7 @@ export default function ItemsDetails() {
 
             <div className="details">
               <h1 onLoad={(e)=>setTitle(e.target.value)}>{value.title}</h1>
-              <h2 onLoad={(e)=>setPrice(e.target.value)}>{value.price}</h2>
+              <h2 onLoad={(e)=>setPrice(e.target.value)}>${value.price}</h2>
               <select name="" id="" onChange={(e) => setSelect(e.target.value)}>
                 <option value="" disabled selected>
                   Select Option
@@ -141,7 +153,7 @@ export default function ItemsDetails() {
         return <HomePageBox     img={value.img}
         brand={value.brand}
         name={value.name}
-        price={value.price}   />;
+        price= {value.price}   />;
       }
       return null;
     })}

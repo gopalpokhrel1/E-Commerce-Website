@@ -31,22 +31,22 @@ export default function LargeBox({img, brand, name, price}) {
             <div className="mid-body">
                 <p>{brand}</p>
                 <h3>{name}</h3>
-                <div className="rating">
+                {/* <div className="rating">
                   <CiStar size={20}/>
                   <CiStar size={20}/>
                   <CiStar size={20}/>
                   <CiStar size={20}/>
                   <CiStar size={20}/>
-                </div>
+                </div> */}
     
-                <div className="last">
+                {/* <div className="last">
                     <p>{price}</p>
                     <div className="cart">
                     <BiCartAdd size={20}/>
                     
                     </div>
     
-                </div>
+                </div> */}
             </div>
 
           
@@ -66,7 +66,7 @@ const Box = styled.div`
 cursor: pointer;
 
 width: 15rem;
-height: 19rem;
+height: 16rem;
 
 padding: 0.5rem 0rem;
 
