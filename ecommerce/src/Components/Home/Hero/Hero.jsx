@@ -1,5 +1,7 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
+
 export default function Hero() {
   return (
    <Container>
@@ -13,7 +15,7 @@ export default function Hero() {
 
             <p>Save more with tokens & upto 70% off</p>
             
-                <img src="../../src/assets/DisplayPhoto/shop-now.png" alt="" />
+            <NavLink to='/Shop'>  <img src="../../src/assets/DisplayPhoto/shop-now.png" alt="" /> </NavLink> 
             
 
         </div>
