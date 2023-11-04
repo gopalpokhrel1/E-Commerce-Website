@@ -5,26 +5,22 @@ import React, { useState } from "react";
 import { remove, clearcart } from "../../Redux/Slice/Cart";
 
 export default function Cart() {
-  const value = useSelector((state) => state.cart.val);
+  const cart = useSelector((state) => state.cart.val);
 
-  const [cart, setCart] = useState(value);
 
-  const [length, setLength] = useState(value.length);
 
   const dispatch = useDispatch();
 
-  const total = value.reduce(
-    (acc, data) => acc + Number.parseInt(data.price),
-    0
+  const total = cart.reduce(
+    (acc, data) => acc + Number.parseInt(data.price),0
   );
 
-  const [totalprice, setTotalPrice] = useState(total);
+  
 
   const handlecart = (cart) => {
     if ((cart.length === 0)) {
       alert("Add to the cart");
     } else {
-      setCart([]);
       setTotalPrice(0);
 
       dispatch(clearcart());
@@ -33,13 +29,16 @@ export default function Cart() {
     }
   };
 
-  const handledispatch = (val) => {
-    console.log(val);
+  const handledispatch = (removeitem) => {
 
-    dispatch(remove(val));
+  
+    dispatch(remove(removeitem));
+
   };
   return (
     <Container>
+
+      
       <div className="header">
         <h1>Your Cart</h1>
       </div>
@@ -94,7 +93,7 @@ export default function Cart() {
       <div className="calculate">
         <div className="left">
           <h1>
-            Total Price: <span>{totalprice}</span>
+            Total Price: <span>{total}</span>
           </h1>
 
           <h1>
@@ -102,7 +101,7 @@ export default function Cart() {
           </h1>
 
           <h1>
-            Total Cost: <span>{totalprice}</span>
+            Total Cost: <span>{total}</span>
           </h1>
         </div>
       </div>

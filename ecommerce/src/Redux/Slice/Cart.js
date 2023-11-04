@@ -14,7 +14,10 @@ const cartSlice = createSlice({
         },
 
         remove:(state, action)=>{
-       state.val=  state.val.filter((value)=> value.name !== action.payload)
+         state.val =state.val.filter((val)=> val.name !== action.payload);
+
+         console.log(state.val);
+
         },
 
         clearcart:(state)=>{
