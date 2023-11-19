@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { nanoid } from "@reduxjs/toolkit";
 
 const initialState={
     val:[]
@@ -10,13 +11,16 @@ const cartSlice = createSlice({
     initialState,
     reducers:{
         insert:(state, action)=>{
-               state.val.push(action.payload);
+               const newitem = {
+                ...action.payload,
+                id:nanoid()
+               }
+
+               state.val.push(newitem);
         },
 
         remove:(state, action)=>{
-         state.val =state.val.filter((val)=> val.name !== action.payload);
-
-         console.log(state.val);
+         state.val = state.val.filter((val)=> val.id !== action.payload);
 
         },
 

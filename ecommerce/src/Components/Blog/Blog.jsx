@@ -1,7 +1,19 @@
 import styled from "styled-components"
+import { useEffect } from "react";
 
 
 export default function Blog() {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+
+    // Scroll to top when the component mounts
+    scrollToTop();
+  }, []); 
   return (
     <Container>
       <div className="header">

@@ -8,6 +8,7 @@
         "type": "MensTshirt",
         "obj":[
           {
+            "id" :"0",
             "img1":"../../src/assets/ShopItem/First_tshirt/img1.jpg",
             "img2":"../../src/assets/ShopItem/First_tshirt/img2.jpg",
             "img3":"../../src/assets/ShopItem/First_tshirt/img3.jpg",
@@ -28,6 +29,7 @@
         "type": "MensTshirt",
         "obj":[
           {
+            "id" :"1",
             "img1":"../../src/assets/ShopItem/Second_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Second_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Second_item/img3.jpg",
@@ -49,6 +51,7 @@
         "type": "third_item",
         "obj":[
           {
+            "id" :"2",
             "img1":"../../src/assets/ShopItem/Third_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Third_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Third_item/img3.jpg",
@@ -69,6 +72,7 @@
         "type": "MensTshirt",
         "obj":[
           {
+            "id" :"3",
             "img1":"../../src/assets/ShopItem/Fourth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Fourth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Fourth_item/img3.jpg",
@@ -88,6 +92,7 @@
         "type": "third_item",
         "obj":[
           {
+            "id" :"4",
             "img1":"../../src/assets/ShopItem/Fifth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Fifth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Fifth_item/img3.jpg",
@@ -108,6 +113,7 @@
         "type": "MensTshirt",
         "obj":[
           {
+            "id" :"5",
             "img1":"../../src/assets/ShopItem/Sixth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Sixth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Sixth_item/img3.jpg",
@@ -128,6 +134,7 @@
         "type": "third_item",
         "obj":[
           {
+            "id" :"6",
             "img1":"../../src/assets/ShopItem/Seventh_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Seventh_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Seventh_item/img3.jpg",
@@ -147,6 +154,7 @@
         "price" : "  20",
         "obj":[
           {
+            "id" :"7",
             "img1":"../../src/assets/ShopItem/Eighth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Eighth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Eighth_item/img3.jpg",
@@ -167,6 +175,7 @@
         "type": "third_item",
         "obj":[
           {
+            "id" :"8",
             "img1":"../../src/assets/ShopItem/Ninth_item/img1.jpeg",
             "img2":"../../src/assets/ShopItem/Ninth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Ninth_item/img3.jpg",
@@ -187,6 +196,7 @@
         "type":"halfPant",
         "obj":[
           {
+            "id" :"9",
             "img1":"../../src/assets/ShopItem/Tenth_item/img1.webp",
             "img2":"../../src/assets/ShopItem/Tenth_item/img2.webp",
             "img3":"../../src/assets/ShopItem/Tenth_item/img3.webp",
@@ -207,6 +217,7 @@
         "type":"halfPant",
         "obj":[
           {
+            "id" :"10",
             "img1":"../../src/assets/ShopItem/Eleventh_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Eleventh_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Eleventh_item/img3.jpg",
@@ -227,6 +238,7 @@
         "type":"halfPant",
         "obj":[
           {
+            "id" :"11",
             "img1":"../../src/assets/ShopItem/Twelveth_item/img1.webp",
             "img2":"../../src/assets/ShopItem/Twelveth_item/img2.webp",
             "img3":"../../src/assets/ShopItem/Twelveth_item/img3.webp",
@@ -247,6 +259,7 @@
         "type":"halfPant",
         "obj":[
           {
+            "id" :"12",
             "img1":"../../src/assets/ShopItem/Thirteenth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Thirteenth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Thirteenth_item/img3.jpg",
@@ -268,6 +281,7 @@
         "type":"outer",
         "obj":[
           {
+            "id" :"13",
             "img1":"../../src/assets/ShopItem/Fourteenth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Fourteenth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Fourteenth_item/img3.jpg",
@@ -288,6 +302,7 @@
         "type":"outer",
         "obj":[
           {
+            "id" :"14",
             "img1":"../../src/assets/ShopItem/fifteenth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/fifteenth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/fifteenth_item/img3.jpg",
@@ -308,6 +323,7 @@
         "type":"outer",
         "obj":[
           {
+            "id" :"15",
             "img1":"../../src/assets/ShopItem/Sixteenth_item/img1.jpg",
             "img2":"../../src/assets/ShopItem/Sixteenth_item/img2.jpg",
             "img3":"../../src/assets/ShopItem/Sixteenth_item/img3.jpg",

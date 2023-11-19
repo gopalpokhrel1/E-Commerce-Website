@@ -3,8 +3,20 @@ import {GrMail} from 'react-icons/gr'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {AiFillClockCircle} from 'react-icons/ai'
 import {HiLocationMarker} from 'react-icons/hi'
+import { useEffect } from "react"
 
 export default function Contact() {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        };
+    
+        // Scroll to top when the component mounts
+        scrollToTop();
+      }, []); 
   return (
     <Container>
 

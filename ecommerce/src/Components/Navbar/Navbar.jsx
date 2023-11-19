@@ -55,7 +55,10 @@ export default function Navbar() {
       </div>
 
       <div className="cart">
-        <NavLink to='/cart' className='cartitem'  ><BsFillCartPlusFill size={30} color="black"/>{value.length}</NavLink>
+       {
+           (value.length==0)?  <NavLink to='/cart' className='cartitem'  ><BsFillCartPlusFill size={30} color="black"/></NavLink>:  <NavLink to='/cart' className='cartitem'  ><BsFillCartPlusFill size={30} color="black"/>{value.length}</NavLink>
+
+       }
         
       </div>
 

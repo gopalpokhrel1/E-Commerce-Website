@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 import { remove, clearcart } from "../../Redux/Slice/Cart";
 
@@ -8,20 +8,35 @@ export default function Cart() {
   const cart = useSelector((state) => state.cart.val);
 
 
+  
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+
+    // Scroll to top when the component mounts
+    scrollToTop();
+  }, []); 
+   
 
   const dispatch = useDispatch();
 
   const total = cart.reduce(
-    (acc, data) => acc + Number.parseInt(data.price),0
+    (acc, data) => acc + Number.parseInt(data.price)*Number.parseInt(data.quantity),0
   );
 
   
 
   const handlecart = (cart) => {
+
+  
     if ((cart.length === 0)) {
       alert("Add to the cart");
     } else {
-      setTotalPrice(0);
 
       dispatch(clearcart());
 
@@ -30,7 +45,6 @@ export default function Cart() {
   };
 
   const handledispatch = (removeitem) => {
-
   
     dispatch(remove(removeitem));
 
@@ -52,6 +66,7 @@ export default function Cart() {
               <th>No.of Item</th>
               <th>Size</th>
               <th>Price</th>
+              <th>Remove</th>
             </thead>
             <tbody>
               {cart.map((data) => (
@@ -63,9 +78,9 @@ export default function Cart() {
                     <td>{data.name}</td>
                     <td>{data.quantity}</td>
                     <td>{data.size}</td>
-                    <td>${data.price}</td>
+                    <td>{data.price*data.quantity}</td>
                     <td>
-                      <button onClick={() => handledispatch(data.name)}>
+                      <button onClick={() => handledispatch(data.id)}>
                         delete
                       </button>
                     </td>

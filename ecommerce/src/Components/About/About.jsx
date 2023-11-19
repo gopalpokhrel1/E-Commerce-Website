@@ -1,8 +1,20 @@
 import styled from "styled-components"
 import Features from "../Features/Features";
+import { useEffect } from "react";
 
 
 export default function About() {
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        };
+    
+        // Scroll to top when the component mounts
+        scrollToTop();
+      }, []); 
   return (
     <Container>
 
