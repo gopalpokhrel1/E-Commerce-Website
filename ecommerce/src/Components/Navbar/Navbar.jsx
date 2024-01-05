@@ -106,6 +106,10 @@ const Header = styled.div`
       transition: 0.2s ease-in;
       color: #6bbde2;
     }
+
+    &:focus{
+      color: #6bbde2;
+    }
   }
 
   .menu,

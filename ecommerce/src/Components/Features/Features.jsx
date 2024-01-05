@@ -9,9 +9,13 @@ export default function Features() {
 
     const getdata = ()=>{
         let file = fetch('../../JSON/file.json').then(value=>value.json())
-        .then(data=> setData(data))
+        .then(data => {
+          return setData(data)
+        })
         .catch('error')
     }
+
+  
 
     useEffect(()=>{
         getdata();

@@ -49,6 +49,8 @@ export default function ItemsDetails() {
   const [title, setTitle] =useState(item[0].title);
 
   const [price, setPrice] = useState(item[0].price);
+
+  const [inputvalue , setInputvalue] = useState(1);
   
 
   const dispatch = useDispatch();
@@ -83,7 +85,26 @@ export default function ItemsDetails() {
    }
   }
 
+ const handleinput =(e)=>{
+ 
+  const value = Number.parseInt(e.target.value);
 
+  if(value < 0){
+    alert("Give proper value");
+
+    setInput(null);
+    setInputvalue(0);
+
+
+
+  
+  }
+
+  else{
+    setInput(value);
+    setInputvalue(value);
+  }
+ }
   
 
   return (
@@ -124,7 +145,7 @@ export default function ItemsDetails() {
               </select>
 
               <div className="cart">
-                <input type="number" placeholder="NO." onChange={(e)=> setInput(e.target.value)} />
+                <input type="number" placeholder="NO." onChange={(e)=> handleinput(e)} value={inputvalue}/>
                 <button onClick={()=>handledata(cartvalue)}>Add Cart</button>
               </div>
 

@@ -24,12 +24,13 @@ export default function Shop() {
 
 
   const [data,setData]= useState([]);
+  
 
   const fetchdata= ()=>{
     const item = fetch('../../JSON/Shop.json')
     .then(value=>value.json())
     .then(val=> setData(val))
-    .catch(console.log('Error was encounter'));
+    .catch();
   }
 
   useEffect(()=>{
