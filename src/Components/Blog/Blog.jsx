@@ -23,7 +23,7 @@ export default function Blog() {
 
       <div className="grid">
         <div className="flex">
-        <img src="../../src/assets/Blog/img1.jpg" alt="photo" />
+        <img src="/Blog/img1.jpg" alt="photo" />
             
         </div>
         <div className="flex">
@@ -35,10 +35,10 @@ export default function Blog() {
             
         </div>
         <div className="flex">
-        <img src="../../src/assets/Blog/img2.jpg" alt="photo" />
+        <img src="/Blog/img2.jpg" alt="photo" />
         </div>
         <div className="flex">
-        <img src="../../src/assets/Blog/img3.jpg" alt="photo" />
+        <img src="/Blog/img3.jpg" alt="photo" />
         </div>
         <div className="flex">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, cum.</p>
@@ -48,7 +48,7 @@ export default function Blog() {
             </p>
         </div>
         <div className="flex">
-        <img src="../../src/assets/Blog/img4.jpg" alt="photo" />
+        <img src="/Blog/img4.jpg" alt="photo" />
         </div>
       </div>
 
@@ -80,7 +80,7 @@ const Container = styled.div`
 
 
     
-    background-image: url('../../src/assets/Blog/Blog_header.jpg');
+    background-image: url('/Blog/Blog_header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

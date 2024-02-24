@@ -25,7 +25,7 @@ export default function About() {
         
         <div className="body">
             <div className="img">
-                <img src="../../src/assets/About/img1.jpg" alt="Photo" />
+                <img src="/About/img1.jpg" alt="Photo" />
             </div>
 
             <div className="content">
@@ -49,7 +49,7 @@ box-sizing: border-box;
     height: 10rem;
     margin-top: 7rem;
 
-    background-image: url('../../src/assets/About/img2.jpg');
+    background-image: url('/About/img2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 10rem;

@@ -30,7 +30,7 @@ margin: 10rem 0rem 5rem 0rem;
 
 width: 100%;
 height: 20rem;
-background-image: url('../../src/assets/Shopbanner/Shopbanner.png');
+background-image: url('/Shopbanner/Shopbanner.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: 100% 20rem;

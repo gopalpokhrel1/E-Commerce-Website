@@ -1,7 +1,7 @@
 [
     {
         "id" :"0",
-        "img": "../../src/assets/SummerClothes/Shirt 1.png",
+        "img": "/SummerClothes/Shirt 1.png",
         "brand": "sasto",
         "name": "Cutton Half-shirt",
         "price" : "  20",
@@ -9,10 +9,10 @@
         "obj":[
           {
             "id" :"0",
-            "img1":"../../src/assets/ShopItem/First_tshirt/img1.jpg",
-            "img2":"../../src/assets/ShopItem/First_tshirt/img2.jpg",
-            "img3":"../../src/assets/ShopItem/First_tshirt/img3.jpg",
-            "img4": "../../src/assets/ShopItem/First_tshirt/img4.png",
+            "img1":"/ShopItem/First_tshirt/img1.jpg",
+            "img2":"/ShopItem/First_tshirt/img2.jpg",
+            "img3":"/ShopItem/First_tshirt/img3.jpg",
+            "img4": "/ShopItem/First_tshirt/img4.png",
             "title": "Cutton Half-shirts",
             "price": "  30",
             "type": "MensTshirt"
@@ -22,7 +22,7 @@
     },
     {
         "id" :"1",
-        "img": "../../src/assets/SummerClothes/Shirt 2.png",
+        "img": "/SummerClothes/Shirt 2.png",
         "brand": "sasto",
         "name": "Cutton Half-shirt",
         "price" : "  20",
@@ -30,10 +30,10 @@
         "obj":[
           {
             "id" :"1",
-            "img1":"../../src/assets/ShopItem/Second_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Second_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Second_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Second_item/img4.jpg",
+            "img1":"/ShopItem/Second_item/img1.jpg",
+            "img2":"/ShopItem/Second_item/img2.jpg",
+            "img3":"/ShopItem/Second_item/img3.jpg",
+            "img4": "/ShopItem/Second_item/img4.jpg",
             "title": "Cutton Half-shirts",
             
             "price": "  30",
@@ -44,7 +44,7 @@
     },
     {
         "id" :"2",
-        "img": "../../src/assets/SummerClothes/Shirt 3.png",
+        "img": "/SummerClothes/Shirt 3.png",
         "brand": "sasto",
         "name": "cutton T-shirt",
         "price" : "  20",
@@ -52,10 +52,10 @@
         "obj":[
           {
             "id" :"2",
-            "img1":"../../src/assets/ShopItem/Third_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Third_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Third_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Third_item/img4.jpg",
+            "img1":"/ShopItem/Third_item/img1.jpg",
+            "img2":"/ShopItem/Third_item/img2.jpg",
+            "img3":"/ShopItem/Third_item/img3.jpg",
+            "img4": "/ShopItem/Third_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "third_item"
@@ -65,7 +65,7 @@
     },
     {
         "id" :"3",
-        "img": "../../src/assets/SummerClothes/Shirt 4.png",
+        "img": "/SummerClothes/Shirt 4.png",
         "brand": "sasto",
         "name": "cutton T-shirt",
         "price" : "  20",
@@ -73,10 +73,10 @@
         "obj":[
           {
             "id" :"3",
-            "img1":"../../src/assets/ShopItem/Fourth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Fourth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Fourth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Fourth_item/img4.png",
+            "img1":"/ShopItem/Fourth_item/img1.jpg",
+            "img2":"/ShopItem/Fourth_item/img2.jpg",
+            "img3":"/ShopItem/Fourth_item/img3.jpg",
+            "img4": "/ShopItem/Fourth_item/img4.png",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "MensTshirt"
@@ -85,7 +85,7 @@
     },
     {
         "id" :"4",
-        "img": "../../src/assets/SummerClothes/Shirt 5.png",
+        "img": "/SummerClothes/Shirt 5.png",
         "brand": "sasto",
         "name": "cutton T-shirt",
         "price" : "  20",
@@ -93,10 +93,10 @@
         "obj":[
           {
             "id" :"4",
-            "img1":"../../src/assets/ShopItem/Fifth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Fifth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Fifth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Fifth_item/img4.jpg",
+            "img1":"/ShopItem/Fifth_item/img1.jpg",
+            "img2":"/ShopItem/Fifth_item/img2.jpg",
+            "img3":"/ShopItem/Fifth_item/img3.jpg",
+            "img4": "/ShopItem/Fifth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "third_item"
@@ -106,7 +106,7 @@
     },
     {
         "id" :"5",
-        "img": "../../src/assets/SummerClothes/Shirt 6.png",
+        "img": "/SummerClothes/Shirt 6.png",
         "brand": "sasto",
         "name": "cutton T-shirt",
         "price" : "  20",
@@ -114,10 +114,10 @@
         "obj":[
           {
             "id" :"5",
-            "img1":"../../src/assets/ShopItem/Sixth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Sixth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Sixth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Sixth_item/img4.jpg",
+            "img1":"/ShopItem/Sixth_item/img1.jpg",
+            "img2":"/ShopItem/Sixth_item/img2.jpg",
+            "img3":"/ShopItem/Sixth_item/img3.jpg",
+            "img4": "/ShopItem/Sixth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "MensTshirt"
@@ -127,7 +127,7 @@
     },
     {
         "id" :"6",
-        "img": "../../src/assets/SummerClothes/Shirt 7.png",
+        "img": "/SummerClothes/Shirt 7.png",
         "brand": "sasto",
         "name": "cutton T-shirt",
         "price" : "  20",
@@ -135,10 +135,10 @@
         "obj":[
           {
             "id" :"6",
-            "img1":"../../src/assets/ShopItem/Seventh_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Seventh_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Seventh_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Seventh_item/img4.jpg",
+            "img1":"/ShopItem/Seventh_item/img1.jpg",
+            "img2":"/ShopItem/Seventh_item/img2.jpg",
+            "img3":"/ShopItem/Seventh_item/img3.jpg",
+            "img4": "/ShopItem/Seventh_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "third_item"
@@ -148,17 +148,17 @@
     },
     {
         "id" :"7",
-        "img": "../../src/assets/SummerClothes/Shirt 8.png",
+        "img": "/SummerClothes/Shirt 8.png",
         "brand": "sasto",
         "name": "cutton T-shirt",
         "price" : "  20",
         "obj":[
           {
             "id" :"7",
-            "img1":"../../src/assets/ShopItem/Eighth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Eighth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Eighth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Eighth_item/img4.jpg",
+            "img1":"/ShopItem/Eighth_item/img1.jpg",
+            "img2":"/ShopItem/Eighth_item/img2.jpg",
+            "img3":"/ShopItem/Eighth_item/img3.jpg",
+            "img4": "/ShopItem/Eighth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "third_item"
@@ -168,7 +168,7 @@
     },
     {
         "id" : "8",
-        "img" : "../../src/assets/Arrival/img1.png",
+        "img" : "/Arrival/img1.png",
         "name" : "cutton T-shirt",
         "price" : "  20",
         "brand" : "sasto",
@@ -176,10 +176,10 @@
         "obj":[
           {
             "id" :"8",
-            "img1":"../../src/assets/ShopItem/Ninth_item/img1.jpeg",
-            "img2":"../../src/assets/ShopItem/Ninth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Ninth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Ninth_item/img4.jpg",
+            "img1":"/ShopItem/Ninth_item/img1.jpeg",
+            "img2":"/ShopItem/Ninth_item/img2.jpg",
+            "img3":"/ShopItem/Ninth_item/img3.jpg",
+            "img4": "/ShopItem/Ninth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "third_item"
@@ -189,7 +189,7 @@
       },
       {
         "id" : "9",
-        "img" : "../../src/assets/Arrival/img2.png",
+        "img" : "/Arrival/img2.png",
         "name" : "Half Pant",
         "price" : "  20",
         "brand" : "sasto",
@@ -197,10 +197,10 @@
         "obj":[
           {
             "id" :"9",
-            "img1":"../../src/assets/ShopItem/Tenth_item/img1.webp",
-            "img2":"../../src/assets/ShopItem/Tenth_item/img2.webp",
-            "img3":"../../src/assets/ShopItem/Tenth_item/img3.webp",
-            "img4": "../../src/assets/ShopItem/Tenth_item/img4.webp",
+            "img1":"/ShopItem/Tenth_item/img1.webp",
+            "img2":"/ShopItem/Tenth_item/img2.webp",
+            "img3":"/ShopItem/Tenth_item/img3.webp",
+            "img4": "/ShopItem/Tenth_item/img4.webp",
             "title": "Half Pant",
             "price": "  30",
             "type": "halfPant"
@@ -210,7 +210,7 @@
       ,
       {
         "id" : "10",
-        "img" : "../../src/assets/Arrival/img3.png",
+        "img" : "/Arrival/img3.png",
         "name" : "Half Pant",
         "price" : "  20",
         "brand" : "sasto",
@@ -218,10 +218,10 @@
         "obj":[
           {
             "id" :"10",
-            "img1":"../../src/assets/ShopItem/Eleventh_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Eleventh_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Eleventh_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Eleventh_item/img4.jpg",
+            "img1":"/ShopItem/Eleventh_item/img1.jpg",
+            "img2":"/ShopItem/Eleventh_item/img2.jpg",
+            "img3":"/ShopItem/Eleventh_item/img3.jpg",
+            "img4": "/ShopItem/Eleventh_item/img4.jpg",
             "title": "Half Pant",
             "price": "  30",
             "type": "halfPant"
@@ -231,7 +231,7 @@
       ,
       {
         "id" : "11",
-        "img" : "../../src/assets/Arrival/img4.png",
+        "img" : "/Arrival/img4.png",
         "name" : "Half Pant",
         "price" : "  20",
         "brand" : "sasto",
@@ -239,10 +239,10 @@
         "obj":[
           {
             "id" :"11",
-            "img1":"../../src/assets/ShopItem/Twelveth_item/img1.webp",
-            "img2":"../../src/assets/ShopItem/Twelveth_item/img2.webp",
-            "img3":"../../src/assets/ShopItem/Twelveth_item/img3.webp",
-            "img4": "../../src/assets/ShopItem/Twelveth_item/img4.webp",
+            "img1":"/ShopItem/Twelveth_item/img1.webp",
+            "img2":"/ShopItem/Twelveth_item/img2.webp",
+            "img3":"/ShopItem/Twelveth_item/img3.webp",
+            "img4": "/ShopItem/Twelveth_item/img4.webp",
             "title": "Half Pant",
             "price": "  30",
             "type": "halfPant"
@@ -252,7 +252,7 @@
       ,
       {
         "id" : "12",
-        "img" : "../../src/assets/Arrival/img5.png",
+        "img" : "/Arrival/img5.png",
         "name" : "cutton T-shirt",
         "price" : "  20",
         "brand" : "sasto",
@@ -260,10 +260,10 @@
         "obj":[
           {
             "id" :"12",
-            "img1":"../../src/assets/ShopItem/Thirteenth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Thirteenth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Thirteenth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Thirteenth_item/img4.jpg",
+            "img1":"/ShopItem/Thirteenth_item/img1.jpg",
+            "img2":"/ShopItem/Thirteenth_item/img2.jpg",
+            "img3":"/ShopItem/Thirteenth_item/img3.jpg",
+            "img4": "/ShopItem/Thirteenth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "MensTshirt"
@@ -274,7 +274,7 @@
       ,
       {
         "id" : "13",
-        "img" : "../../src/assets/Arrival/img6.png",
+        "img" : "/Arrival/img6.png",
         "name" : "cutton T-shirt",
         "price" : "  20",
         "brand" : "sasto",
@@ -282,10 +282,10 @@
         "obj":[
           {
             "id" :"13",
-            "img1":"../../src/assets/ShopItem/Fourteenth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Fourteenth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Fourteenth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Fourteenth_item/img4.jpg",
+            "img1":"/ShopItem/Fourteenth_item/img1.jpg",
+            "img2":"/ShopItem/Fourteenth_item/img2.jpg",
+            "img3":"/ShopItem/Fourteenth_item/img3.jpg",
+            "img4": "/ShopItem/Fourteenth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "outer"
@@ -295,7 +295,7 @@
       ,
       {
         "id" : "14",
-        "img" : "../../src/assets/Arrival/img7.png",
+        "img" : "/Arrival/img7.png",
         "name" : "cutton T-shirt",
         "price" : "  20",
         "brand" : "sasto",
@@ -303,10 +303,10 @@
         "obj":[
           {
             "id" :"14",
-            "img1":"../../src/assets/ShopItem/fifteenth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/fifteenth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/fifteenth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/fifteenth_item/img4.jpg",
+            "img1":"/ShopItem/fifteenth_item/img1.jpg",
+            "img2":"/ShopItem/fifteenth_item/img2.jpg",
+            "img3":"/ShopItem/fifteenth_item/img3.jpg",
+            "img4": "/ShopItem/fifteenth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "outer"
@@ -316,7 +316,7 @@
       ,
       {
         "id" : "15",
-        "img" : "../../src/assets/Arrival/img8.png",
+        "img" : "/Arrival/img8.png",
         "name" : "cutton T-shirt",
         "price" : "  20",
         "brand" : "sasto",
@@ -324,10 +324,10 @@
         "obj":[
           {
             "id" :"15",
-            "img1":"../../src/assets/ShopItem/Sixteenth_item/img1.jpg",
-            "img2":"../../src/assets/ShopItem/Sixteenth_item/img2.jpg",
-            "img3":"../../src/assets/ShopItem/Sixteenth_item/img3.jpg",
-            "img4": "../../src/assets/ShopItem/Sixteenth_item/img4.jpg",
+            "img1":"/ShopItem/Sixteenth_item/img1.jpg",
+            "img2":"/ShopItem/Sixteenth_item/img2.jpg",
+            "img3":"/ShopItem/Sixteenth_item/img3.jpg",
+            "img4": "/ShopItem/Sixteenth_item/img4.jpg",
             "title": "Mens's T-shirts",
             "price": "  30",
             "type": "outer"

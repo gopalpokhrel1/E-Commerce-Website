@@ -18,7 +18,7 @@ const Box = styled.div`
 width: 100%;
 height: 9rem;
 
-background-image: url('../../src/assets/Banner/img.jpg');
+background-image: url('/Banner/img.jpg');
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;

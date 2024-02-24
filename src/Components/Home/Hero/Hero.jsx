@@ -15,14 +15,14 @@ export default function Hero() {
 
             <p>Save more with tokens & upto 70% off</p>
             
-            <NavLink to='/Shop'>  <img src="../../src/assets/DisplayPhoto/shop-now.png" alt="" /> </NavLink> 
+            <NavLink to='/Shop'>  <img src="/DisplayPhoto/shop-now.png" alt="" /> </NavLink> 
             
 
         </div>
 
         <div className="right-side">
           
-          <img src="../../src/assets/DisplayPhoto/girl photo.png"alt="" />
+          <img src="/DisplayPhoto/girl photo.png"alt="" />
 
         </div>
     </div>
@@ -34,7 +34,7 @@ export default function Hero() {
 const Container = styled.div`
 width: 100%;
 min-height: 100vh;
-background-color: rgb(238, 238, 221);
+background-color: rgb(255, 255, 255);
 
 .container-item{
     width: 80%;

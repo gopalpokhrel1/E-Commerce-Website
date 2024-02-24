@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <Header>
       <div className="photo">
-        <img src="../../src/assets/Logo/header-log.png" alt="" />
+        <img src="/Logo/header-log.png" alt="" />
       </div>
 
       <div className="list">

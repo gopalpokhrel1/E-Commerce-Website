@@ -21,7 +21,7 @@ const Banner = styled.div`
 margin: 2rem 0rem;
 
 width: 100%;
-background-image: url('../../src/assets/Banner/img2.jpg');
+background-image: url('/Banner/img2.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: 100% 10rem;

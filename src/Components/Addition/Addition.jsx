@@ -8,20 +8,20 @@ export default function Addition() {
     <>
     <Container>
 
-        <AddBBox first= 'Crazy deals' second= 'Buy 1 Get 1 Free' third='The best classic dress in on sale at sasto' last= 'Learn More' img='../../src/assets/Additon/img1.png' />
+        <AddBBox first= 'Crazy deals' second= 'Buy 1 Get 1 Free' third='The best classic dress in on sale at sasto' last= 'Learn More' img='/Additon/img1.png' />
 
-        <AddBBox first= 'Spring/Summer' second= 'Upcoming Season'  last= 'Explore More' img='../../src/assets/Additon/img2.png' />
+        <AddBBox first= 'Spring/Summer' second= 'Upcoming Season'  last= 'Explore More' img='/Additon/img2.png' />
 
 
       
     </Container>
 
  <Container>
-<AddSBox first= 'Seasonal Sale' second= 'Winter Collection' third='Learn More'  img= '../../src/assets/Additon/img3.png'/>
+<AddSBox first= 'Seasonal Sale' second= 'Winter Collection' third='Learn More'  img= '/Additon/img3.png'/>
 
-<AddSBox first= 'New Footwear Collection' second= 'Spring/Summer' third='Learn More'  img= '../../src/assets/Additon/img4.png'/>
+<AddSBox first= 'New Footwear Collection' second= 'Spring/Summer' third='Learn More'  img= '/Additon/img4.png'/>
 
-<AddSBox first= 'T-shirts' second= 'Summer  T-shirts' third='Learn More'  img= '../../src/assets/Additon/img5.png'/>
+<AddSBox first= 'T-shirts' second= 'Summer  T-shirts' third='Learn More'  img= '/Additon/img5.png'/>
 </Container></>
   )
 }

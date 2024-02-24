@@ -74,7 +74,7 @@ margin-top: 7rem;
     width: 100%;
     height: 12rem;
 
-    background-image: url('../../src/assets/ContactUs/img1.webp');
+    background-image: url('/ContactUs/img1.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 12rem;
