@@ -98,8 +98,12 @@ box-sizing: border-box;
 
         display: block;
         .img{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
             img{
-                width: calc(100%-5%);
+                width: calc(100% - 5%);
             }
         }
 

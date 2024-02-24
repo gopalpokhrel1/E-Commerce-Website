@@ -36,6 +36,15 @@ setData(shopdata);
 
   useEffect(()=>{
     fetchdata();
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+
+    // Scroll to top when the component mounts
+    scrollToTop();
   }, [])
 
   
