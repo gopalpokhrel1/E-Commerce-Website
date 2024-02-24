@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import HomePageBox from "../../Small_Box/HomePageBox"
+import shopdata from '../../../JSON/Shop.json';
 
 import { insert } from "../../../Redux/Slice/Cart";
 
@@ -30,10 +31,7 @@ export default function ItemsDetails() {
   const [data,setData]= useState([]);
 
   const fetchdata= ()=>{
-    const item = fetch('../../JSON/Shop.json')
-    .then(value=>value.json())
-    .then(val=> setData(val))
-    .catch(console.log('Error was encounter'));
+setData(shopdata);
   }
 
   useEffect(()=>{

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 import LargeBox from '../../Small_Box/LargeBox';
+import shopdata from '../../../JSON/Shop.json'
 
 
 
@@ -27,10 +28,7 @@ export default function Shop() {
   
 
   const fetchdata= ()=>{
-    const item = fetch('../../JSON/Shop.json')
-    .then(value=>value.json())
-    .then(val=> setData(val))
-    .catch();
+    setData(shopdata);
   }
 
   useEffect(()=>{
