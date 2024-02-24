@@ -3,7 +3,7 @@ import { BsFillCartPlusFill } from "react-icons/bs";
 import { IoMdMenu } from "react-icons/io";
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 import { useSelector } from "react-redux";
 
 export default function Navbar() {
@@ -20,9 +20,11 @@ export default function Navbar() {
 
   return (
     <Header>
+      <Link to='/'>
       <div className="photo">
         <img src="/Logo/header-log.png" alt="" />
       </div>
+      </Link>
 
       <div className="list">
         <ul className={`list-item ${displayMenu ? "show-menu" : ""}`}>
