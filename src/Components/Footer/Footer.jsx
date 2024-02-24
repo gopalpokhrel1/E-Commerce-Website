@@ -63,9 +63,10 @@ export default function Footer() {
 
 const Container = styled.div`
   width: 100%;
-  background-color: #47402ea4;
+  background-color: #ffffffa2;
   box-sizing: border-box;
   font-size: 0.9rem;
+  box-shadow:1px -0.5px 1px black;
 
   .footer-grid{
     display: grid;

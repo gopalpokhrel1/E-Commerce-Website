@@ -44,7 +44,7 @@ export default function ItemsDetails() {
 
   const [select , setSelect] = useState(null);
 
-  const [input, setInput] = useState(null);
+  const [input, setInput] = useState(1);
 
   const [title, setTitle] =useState(item[0].title);
 
@@ -92,7 +92,7 @@ export default function ItemsDetails() {
   if(value < 0){
     alert("Give proper value");
 
-    setInput(null);
+    setInput(1);
     setInputvalue(0);
 
 
@@ -116,6 +116,7 @@ export default function ItemsDetails() {
               <div className="main-photo">
                 <img src={image} alt="photo" />
               </div>
+             
               <div className="option">
                 <button onClick={() => setI(0)}>
                   <img src={value.img1} alt="photo" />
@@ -129,7 +130,7 @@ export default function ItemsDetails() {
                 <button onClick={() => setI(3)}>
                   <img src={value.img4} alt="photo" />
                 </button>
-              </div>
+              </div> 
             </div>
 
             <div className="details">
@@ -206,7 +207,7 @@ const Container = styled.div`
         align-items: center;
         justify-content: center;
 
-        border: 5px solid #b4a979;
+        border: 1px solid #b4a979;
         border-radius: 1rem;
         img {
           width: 16rem;
@@ -223,7 +224,9 @@ const Container = styled.div`
           height: 5rem;
           border: none;
           background-color: transparent;
-          border: 1px solid black;
+          border: 0.6px solid #b4a979;
+          border-radius: 8px;
+          padding: 2px;
 
           cursor: pointer;
 
