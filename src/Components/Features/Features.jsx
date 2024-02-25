@@ -2,17 +2,15 @@ import styled from "styled-components";
 import SmallBox from "../Small_Box/SmallBox";
 import { useState, useEffect } from "react";
 
+import file from '../../JSON/file.json';
+
 
 export default function Features() {
 
     const [data, setData] = useState([]);
 
     const getdata = ()=>{
-        let file = fetch('../../JSON/file.json').then(value=>value.json())
-        .then(data => {
-          return setData(data)
-        })
-        .catch('error')
+       setData(file);
     }
 
   

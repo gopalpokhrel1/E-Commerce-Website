@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
+import file from '../../JSON/summer.json';
 
 import HomePageBox from '../Small_Box/HomePageBox'
 
@@ -7,9 +8,7 @@ export default function FeaturedProducts() {
   const [data, setData] = useState([]);
 
   const getdata = () => {
-    let item = fetch(".../../JSON/summer.json")
-      .then((val) => val.json())
-      .then((data) => setData(data)).catch(console.log('error'))
+   setData(file);
   };
 
   useEffect(() => {

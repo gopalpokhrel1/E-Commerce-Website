@@ -31,8 +31,9 @@ export default function ItemsDetails() {
   const [data,setData]= useState([]);
 
   const fetchdata= ()=>{
-setData(shopdata);
-  }
+      setData(shopdata);
+  
+  } 
 
   useEffect(()=>{
     fetchdata();
